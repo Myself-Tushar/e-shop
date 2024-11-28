@@ -1,0 +1,117 @@
+.container {
+  width: 100%; /* instead of fixed width */
+  padding: 1em;
+}
+
+/* For large devices like desktops */
+@media (min-width: 992px) {
+  .container {
+    padding: 2rem;
+  }
+}
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    padding: 1.5rem;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 767px) {
+  .container {
+    padding: 1rem;
+  }
+}
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .product-card {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel-item img {
+            transition: transform 0.5s;
+        }
+
+        .carousel-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .footer {
+            background-color: rgb(7, 79, 221);
+            color: white;
+        }
+
+        .footer a {
+            color: #f8f9fb;
+        }
+
+        .testimonial {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .testimonial:hover {
+            transform: translateY(-5px);
+        }
+
+        .category-icon {
+            font-size: 40px;
+            color: #007bff;
+        }
+
+        /* Remove focus outline on navbar-toggler button */
+    .navbar-toggler:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+
+
+    .navbar {
+    background: linear-gradient(90deg, #093c9b, #00379d, #012c5d); /* Subtle gray to deep blue gradient */
+    /* background: linear-gradient(90deg, #093c9b, #144fbd, #2971c4); Subtle gray to deep blue gradient */
+    color: #ffffff;
+}
+
+/* Navbar Brand Strong */
+.navbar-brand strong {
+  color: #ffffff; /* White color for brand text */
+  font-weight: bold; /* Bold text weight */
+  font-size: 1.6rem; /* Adjust the size as needed */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.navbar-brand strong:hover {
+  color: #0252ff; /* Green color on hover */
+}
+
+
+
+.nav-link {
+    color: #ffffff;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover {
+    color: #ffd700; /* Golden hover color for an elegant touch */
+}
+
+.navbar-toggler {
+    border-color: #ffffff; /* White border for the toggler button */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    /* White color for the icon lines */
+}
