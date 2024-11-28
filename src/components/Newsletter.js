@@ -13,7 +13,7 @@ function Newsletter() {
         <section className="bg-light py-5 text-center">
             <div className="container">
                 <h2 className="mb-4">Subscribe to Our Newsletter</h2>
-                <p>Get the latest updates and exclusive offers directly in your inbox.</p>
+                <p>Get the latest updates and exclusive offers directly in your inbox.</p><br></br>
                 <form className="d-flex justify-content-center" onSubmit={handleSubscribe}>
                     <input type="email" className="form-control w-50" placeholder="Enter your email" required />
                     <button type="submit" className="btn btn-primary ms-2">Subscribe</button>
