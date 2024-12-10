@@ -252,3 +252,107 @@ ul.custom-list li {
 @media (max-width: 480px) {
   /* Styles for mobile devices */
 }
+
+/* General Styles for Auth Pages */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa; /* Light background color */
+}
+
+.auth-box {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px; /* Max width for the form box */
+  margin: 20px;
+}
+
+.auth-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--primary-color); /* Use the primary color */
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.auth-form input:focus {
+  border-color: var(--primary-color); /* Highlight input on focus */
+  outline: none;
+}
+
+.auth-form button {
+  padding: 12px;
+  border: none;
+  background-color: var(--primary-color); /* Use primary color */
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.auth-form button:hover {
+  background-color: var(--secondary-color); /* Hover effect for the button */
+  transform: scale(1.05); /* Slight button expansion */
+}
+
+.auth-form .forgot-password {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.auth-form .forgot-password:hover {
+  text-decoration: underline;
+}
+
+.auth-form .switch-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.auth-form .switch-link a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.auth-form .switch-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 576px) {
+  .auth-container {
+    padding: 20px;
+  }
+
+  .auth-box {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .auth-title {
+    font-size: 1.5rem; /* Smaller title on mobile */
+  }
+}
