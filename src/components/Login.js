@@ -28,7 +28,9 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-          <button type="submit">Login</button>
+          <div class="button-containerr">
+  <button type="submit" class="custom-submit-buttonn">Submit</button>
+</div>
           <a href="/forgot-password" className="forgot-password">Forgot Password?</a>
           <div className="switch-link">
             Don't have an account? <a href="/register">Register</a>

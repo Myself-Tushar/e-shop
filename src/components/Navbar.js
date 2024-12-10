@@ -12,9 +12,16 @@ function Navbar() {
         }
 
         window.scrollTo({
-            top: targetElement.offsetTop - 80, // Adjust offset for sticky navbar
+            top: targetElement.offsetTop - 350, // Adjust offset for sticky navbar
             behavior: 'smooth',
         });
+    };
+
+    const closeNavbar = () => {
+        const navbarToggle = document.getElementById("navbarNav");
+        if (navbarToggle.classList.contains("show")) {
+            navbarToggle.classList.remove("show"); // Close navbar by removing 'show' class
+        }
     };
 
     const navItems = ['Home', 'Featured', 'Categories', 'Cart', 'Checkout'];
@@ -35,7 +42,10 @@ function Navbar() {
                                 <a
                                     className="nav-link"
                                     href={`#${item.toLowerCase()}`}
-                                    onClick={(e) => smoothScroll(e, item.toLowerCase())}
+                                    onClick={(e) => {
+                                        smoothScroll(e, item.toLowerCase());
+                                        closeNavbar(); // Close navbar when item is clicked
+                                    }}
                                 >
                                     {item}
                                 </a>
@@ -43,12 +53,20 @@ function Navbar() {
                         ))}
                         {/* Link to Login and Register */}
                         <li className="nav-item">
-                            <Link className="nav-link" to="/login">
+                            <Link
+                                className="nav-link"
+                                to="/login"
+                                onClick={closeNavbar} // Close navbar when Login is clicked
+                            >
                                 Login
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/register">
+                            <Link
+                                className="nav-link"
+                                to="/register"
+                                onClick={closeNavbar} // Close navbar when Register is clicked
+                            >
                                 Register
                             </Link>
                         </li>

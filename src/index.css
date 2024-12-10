@@ -302,7 +302,7 @@ ul.custom-list li {
   padding: 12px;
   border: none;
   background-color: var(--primary-color); /* Use primary color */
-  color: white;
+  color: rgb(17, 16, 16);
   font-size: 1rem;
   border-radius: 5px;
   cursor: pointer;
@@ -355,4 +355,41 @@ ul.custom-list li {
   .auth-title {
     font-size: 1.5rem; /* Smaller title on mobile */
   }
+}
+
+.button-containerr {
+  display: flex; /* Use flexbox to center the button */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  
+}
+.custom-submit-buttonn {
+  padding: 8px 16px; /* Smaller padding for a smaller button */
+  width: 150px; /* Set a fixed width for the button */
+  
+  border: none; /* Remove default border */
+  background-color: #0312b3 !important; /* Black background, marked important */
+  color: rgb(244, 244, 250) !important; /* Text color, marked important */
+
+  font-size: 1rem; /* Font size */
+  font-weight: bold; /* Bold text */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 4px 6px rgba(157, 39, 39, 0.1); /* Light shadow for depth */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.custom-submit-buttonn:hover {
+  background-color: #0b2fe7 !important; /* Darker green on hover, marked important */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.custom-submit-buttonn:active {
+  background-color: #1d16e7 !important; /* Darker green on click, marked important */
+  transform: scale(1); /* Reset scale on click */
+}
+
+.custom-submit-buttonn:focus {
+  outline: none; /* Remove outline */
+  box-shadow: 0 0 5px 2px rgba(1, 29, 187, 0.7); /* Add focus shadow */
 }
