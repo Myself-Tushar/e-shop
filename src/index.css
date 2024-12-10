@@ -1,4 +1,21 @@
+.navbar {
+  padding: 0.0rem ; /* Reduce padding for smaller height */
+  background-color: #0047ab; /* Optional: customize navbar color */
+}
 
+.navbar-brand {
+  font-size: 0.9rem; /* Scale down the brand font size */
+  margin: 0; /* Remove extra margins */
+}
+
+
+
+
+/* Optional: Apply flexbox for precise vertical alignment */
+.navbar .container {
+  display: flex;
+  align-items: center; /* Center align items vertically */
+}
 
 /* Hero Section Styles */
 .hero {
