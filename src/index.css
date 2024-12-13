@@ -8,9 +8,6 @@
   margin: 0; /* Remove extra margins */
 }
 
-
-
-
 /* Optional: Apply flexbox for precise vertical alignment */
 .navbar .container {
   display: flex;
